@@ -1,0 +1,252 @@
+\documentclass[a4paper]{article}
+% Leave uncommented if the LaTeX file is uploaded to arXiv.org
+\pdfoutput=1
+\pdfminorversion=7
+
+% Packages
+\usepackage{arxiv}
+\usepackage[colorlinks=true,linkcolor=cyan,citecolor=cyan]{hyperref}
+\usepackage{bbm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{csquotes}
+\usepackage[numbers]{natbib}
+\usepackage{setspace}
+\usepackage{doi}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{authblk}
+\usepackage{caption}
+\usepackage{bbm}
+\usepackage[normalem]{ulem}
+
+% Useful macros for equations and units in HEP
+\newcommand*{\TeV}{\text{ TeV}}
+\newcommand*{\GeV}{\text{ GeV}}
+\newcommand*{\MeV}{\text{ MeV}}
+\newcommand*{\keV}{\text{ keV}}
+\newcommand*{\eV}{\text{ eV}}
+\newcommand*{\meV}{\text{ meV}}
+\newcommand*{\Msun}{\mathrm{M}_{\odot}}
+\newcommand*{\bb}{\boldsymbol}
+\newcommand*{\beqn}{\begin{equation}}
+\newcommand*{\eeqn}{\end{equation}}
+\newcommand{\req}[1]{Eq.~(\ref{#1})}
+\newcommand{\rf}[1]{Figure~{\ref{#1}}}
+\newcommand{\rt}[1]{Table~{\ref{#1}}}
+\newcommand{\rsec}[1]{Section~{\ref{#1}}}
+\newcommand{\rchap}[1]{Chapter~{\ref{#1}}}
+\newcommand{\rapp}[1]{Appendix~{\ref{#1}}}
+\newcommand*{\ar}{{\color{red}\textdagger\ }}
+
+% Struts for tables 
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}
+\newcommand{\TBstrut}{\Tstrut\Bstrut}
+
+% Useful macros for annotation
+\newcommand*{\xred}{\color{red}}
+\newcommand*{\xblue}{\color{black}}
+\newcommand*{\xgreen}{\color{green}}
+
+\title{Electromagnetic dipole properties of neutrinos}
+
+% Author Orcid ID: Define per author
+\newcommand{\orcA}{0000-0001-8217-1484}
+\newcommand{\orcB}{0000-0001-5474-2649}
+
+\author{Johann Rafelski\orc{\orcA} and Andrew Steinmetz\orc{\orcB}\\ Department of Physics, The University of Arizona, Tucson, AZ 85721, USA}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+Neutrino mixing is an important avenue for studying beyond standard model (BSM) physics as flavor mixing only occurs in the presence of massive neutrinos. However, as neutrinos are naturally massless in the standard model this presents a problem as there's no unique mechanism to introduce mass for neutrinos and it is yet unknown if neutrinos are Dirac-type or Majorana-type fermions. We establish that neutrino flavor mixing is not uniquely a property of mass, but also occurs from the possible magnetic dipole moment of the particles. We introduce a unified expressive for mass and magnetic moment and analyze how the PMNS rotation matrix may be sensitive to strong electromagnetic fields.
+\end{abstract}
+
+\keywords{neutrinos \and neutrino oscillations \and anomalous magnetic moment \and electromagnetic fields}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Neutrino magnetic moments and flavor rotation}
+\label{sec:flavor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent Neutrinos are among the most abundant particles in the universe. Despite their difficult to measure effects today, neutrinos once were the dominant form of energy density in the universe~\cite{Rafelski:2023emw} and still play an important role in the deaths of stars today. Therefore it is of interest to study their electromagnetic properties in strong field conditions.
+
+The size of the neutrino magnetic dipole moment is relatively small with a lower bound determined by the standard model and an upper bound from reactor or solar observations given by~\citep{Studenikin:2016ykv,Canas:2015yoa,AristizabalSierra:2021fuc}
+
+\begin{align}
+    \label{momentbound:1}
+    10^{-19}\mu_{B}<\mu_{\nu}^\mathrm{eff}<10^{-10}\mu_{B}\,,\qquad\mu_{B}=\frac{e\hbar}{2m}
+\end{align}
+
+where $\mu_{B}$ is the Bohr magneton and $\mu_{\nu}^\mathrm{eff}$ is the effective and characteristic size of the neutrino magnetic moment. In the standard model, neutrinos do not interact electromagnetically at tree level as they are only coupled to the weak interaction via the $SU(2)_{L}$ doublet~\citep{Schwartz:2014sze}.
+
+However, through higher order loop interactions it is expected that the neutrino should manifestation some non-minimal EM interactions~\citep{Shrock:1980vy,DUNE:2020fgq} of the form
+\begin{gather}
+    \bb{\mu_{\nu}}=
+	\begin{pmatrix}
+		\mu_{ee} & \mu_{e\mu} & \mu_{e\tau} \\
+		\mu_{e\mu}^{*} & \mu_{\mu\mu} & \mu_{\mu\tau} \\
+		\mu_{e\tau}^{*} & \mu_{\mu\tau}^{*} & \mu_{\tau\tau}
+	\end{pmatrix}
+\end{gather}
+This leaves open the possibility for Beyond Standard Model (BSM) physics to produce an abnormally large electromagnetic dipole~\citep{Giunti:2014ixa,Lindner:2017uvt,Brdar:2020quo} between the bounds of~\req{momentbound:1} which may manifest in strong field or matter dense environments.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Status of neutrino flavor mixing}
+\label{sec:numass}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent As neutrinos have masses, there is no guarantee that their $SU(2)_{L}$ flavor eigenstates will be simultaneously their propagating mass eigenstates. This misalignment between the two representations can then written as rotation of the neutrino flavor 3-vector where $N=3$ is the number of generations. The unitary mixing matrix $\bb{V}$ allows for the change of basis between mass and flavor eigenstates via
+\begin{alignat}{1}
+	\label{basis:1} \bb{\nu_{f}}=\bb{V}\bb{\nu_{m}}\,\rightarrow\indent
+	\begin{pmatrix}
+		\nu_{e}\\
+		\nu_{\mu}\\
+		\nu_{\tau}
+	\end{pmatrix}=
+	\begin{pmatrix}
+		V_{e1} & V_{e2} & V_{e3}\\
+		V_{\mu1} & V_{\mu2} & V_{\mu3}\\
+		V_{\tau1} & V_{\tau2} & V_{\tau3}
+	\end{pmatrix}
+	\begin{pmatrix}
+		\nu_{1}\\
+		\nu_{2}\\
+		\nu_{3}
+	\end{pmatrix}\,,
+\end{alignat}
+where $\bb{\nu_{f}}$ is the neutrino state vector written in the flavor basis while $\bb{\nu_{m}}$ is written in the mass basis. Boldface type will be used for matrices and vectors. Bars atop vectors represent the Dirac adjoint in the usual manner.
+
+The mixing matrix's form then depends on the Dirac-like or Majorana-like nature of the neutrinos
+\begin{alignat}{1}
+	\label{phases:1} &\bb{V} = \bb{U}\bb{P}\,,\\
+	\label{phases:2} &\bb{P}_\mathrm{Dirac} = \mathbbm{1}\,,\\
+	\label{phases:3} &\bb{P}_\mathrm{Maj.} = \mathrm{diag}(e^{i\rho},e^{i\sigma},1)\,.
+\end{alignat}
+Majorana neutrinos allow up to two additional complex phases $\rho$ and $\sigma$ which participate in CPV. In the standard parameterization~\citep{Schwartz:2014sze}, the rotation matrix $\bb{U}$ can be expressed as
+\begin{alignat}{1}
+	\label{rotation:1} \bb{U} =
+	  \begin{pmatrix}
+		  c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\\
+		  -s_{12}c_{23} - c_{12}s_{13}s_{23}e^{i\delta} & c_{12}c_{23} - s_{12}s_{13}s_{23}e^{i\delta} & c_{13}s_{23}\\
+		  s_{12}s_{23} - c_{12}s_{13}c_{23}e^{i\delta}& -c_{12}s_{23} - s_{12}s_{13}c_{23}e^{i\delta} & c_{13}c_{23}
+	  \end{pmatrix}\,,
+\end{alignat}
+where $c_{ij} = \mathrm{cos}(\theta_{ij})$ and $s_{ij} = \mathrm{sin}(\theta_{ij})$. In this convention, the three mixing angles $(\theta_{12}, \theta_{13}, \theta_{23})$, are understood to be the Euler angles for generalized rotations. There are many possible parametrizations for the mixing matrix and without a working model of the underlying physics, they represent generic observables which are otherwise not predicted. Another relevant choice is the~\cite{wolfenstein1983parametrization} parameterization, but as neutrinos mixing angles are rather large unlike the parameters for the CKM matrix in the quark sector, we will not use it here.
+
+The Majorana mass Lagrangian in the flavor basis can then be written as
+\begin{alignat}{1}
+	\label{mass:1} -\mathcal{L}_{\mathrm{mass}}^{\mathrm{Maj.}}&=\frac{1}{2}\bb{\bar{\nu}_{f}^{L}}\bb{M}_{\nu}\left(\bb{\nu_{f}^{L}}\right)^{c}+\mathrm{h.c}\,,
+\end{alignat}
+where $\bb{\nu^{L}}$ refers to left-handed chiral states which can be obtained using projection operators and $\gamma^{5}$. The superscript $\bb{\nu}^{c}$ refers to the charge conjugated state where $\bb{\nu}^{c} = \hat{C}(\bb{\bar{\nu}})^\mathrm{T}$ is the charge conjugate of the neutrino field. The operator $\hat{C} = i\gamma^{2}\gamma^{0}$ is the charge conjugation operator which can be written as a $4\times4$ matrix for a given representation as each flavor is in this formulation a four-component spinor.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introducing electromagnetic fields to neutrino dynamics}
+\label{sec:numoment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent As neutrinos are electrically neutral, they have no intrinsic magnetic moment due to their spin, therefore any magnetic moment present is considered anomalous. A small anomalous magnetic moment (AMM) can be introduced into the Lagrangian~\citep{Itzykson:1980rh,Steinmetz:2018ryf} for the neutrino via a Pauli term. As our focus is on effective field theories, we will not worry with the fact that the Pauli Lagrangian is 5-Dimensional and thus fails to be renormalizable. The Pauli Lagrangian for the AMM for Majorana-like neutrinos in the flavor basis is given by
+\begin{align}
+	\label{moment:1} -\mathcal{L}_{\mathrm{AMM}}^\mathrm{Maj.}=\frac{1}{2}\bb{\bar{\nu}_{f}^{L}}\bb{\mu}\frac{i}{2}\gamma_{\alpha}F^{\alpha\beta}\gamma_{\beta}\left(\bb{\nu_{f}^{L}}\right)^{c}+\mathrm{h.c.}
+\end{align}
+The matrix $\bb{\mu}$ are the AMM couplings while $F^{\alpha\beta}$ is our standard electromagnetic field tensor. For Majorana neutrinos, the trace of $\bb{\mu}$ is zero thus all the diagonal elements are identically zero.
+
+Because of CPT considerations, Majorana neutrino are forbidden diagonal magnetic moments and can only have off-diagonal transition moments. Since transition AMM elements serve to break lepton number conservation, it suggests than neutrinos could be \lq\lq remixed\rq\rq\ when exposed to strong electrodynamic fields similar to remixing within matter in the Mikheyev-Smirnov-Wolfenstein (MSW) effect~\citep{wolfenstein1978neutrino,mikheev1985resonance,bethe1986possible,greiner2009gauge}. 
+
+We can combine the AMM contribution and the mass term in~\req{mass:1} and~\req{moment:1} to write an effective Lagrangian containing both terms as
+\begin{align}
+	\label{massmom:1}
+    \mathcal{L}_\mathrm{eff}^\mathrm{Maj.}=\mathcal{L}_\mathrm{mass}^\mathrm{Maj.} + \mathcal{L}_\mathrm{AMM}^\mathrm{Maj.}=-\frac{1}{2}\bb{\bar{\nu}_{f}^{L}}\left(\bb{M}_{\nu}+\bb{\mu}\frac{i}{2}\gamma_{\alpha}F^{\alpha\beta}\gamma_{\beta}\right)\left(\bb{\nu_{f}^{L}}\right)^{c}+\mathrm{h.c.}
+\end{align}
+The generalized mass-dipole matrix $\bb{\mathcal M}$ present in \req{massmom:1} can be cast in the following manner
+\begin{align}
+	\label{massmom:2}
+    {\bb{\mathcal{M}}}(\vec{E},\vec{B})\equiv\bb{M}_{\nu}+\bb{\mu}\frac{i}{2}\gamma_{\alpha}F^{\alpha\beta}\gamma_{\beta}\,.
+\end{align}
+Further, we can understand the mass matrix (in the flavor basis) as a diagonal part and traceless part
+\begin{align}
+	\label{massmom:3}
+    \bb{M}_{\nu}=\bb{m}_\mathrm{diag}+\bb{K}\,,\qquad
+    \bb{m}_\mathrm{diag}=\mathrm{diag}(m_{\nu_{e}},m_{\nu_{\mu}},m_{\nu_{\tau}})\,,\qquad
+    \mathrm{Tr}\left[\bb{K}\right] = 0 \,,
+\end{align}
+where $\bb{m}_\mathrm{diag}$ is the intrinsic flavor masses and $\bb{W}$ is the off-diagonal interaction coupling between flavors prescribed by BSM physics. Since neutrino oscillation is experimentally verified, the coupling matrix cannot be fully zero, though elements of the intrinsic flavor masses can. Depending on what theory generates the AMM elements, there is the possibility of non-Hermitian $\bb{\mu}$ with $\bb{\mu}^{\dagger}\neq\bb{\mu}$. Additionally, the conditions for $\bb{K}$ can be further constrained by group symmetry such as flavor SU(3). While non-Hermitian moments and group structure raise interesting possibilities, we will not explore them further here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Magnetic moment-flavor mixing for two generations}
+\label{sec:mix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent To demonstrate an example of how spin (and thus magnetic moment) and flavor may mix, let us consider two generations of neutrinos. From the experimental data on neutrino oscillations, is is understood that either the two heavier (normal hierarchy) or the two lighter (inverted hierarchy) neutrino states are close together in mass. If the electromagnetic properties of the neutrino do indeed lead to flavor mixing effects, then it is likely the closer pair of neutrino mass states are most sensitive to the phenomenon.
+
+It is still unknown which hierarchy neutrinos follow, therefore probing the EM properties of neutrinos may provide evidence for one model over the other. The behavior of the two generation neutrino model may then be valuable for subtle EM mixing effects especially in regard to the two neutrinos with more similar masses.
+
+To avoid direct magnetic moments, we will consider for now only Majorana neutrinos. Majorana nuetrinos have the following properties
+\begin{alignat}{1}
+	\label{mix:eq:00a}	\bb{M}^{\mathrm{T}}=\bb{M}\,,\qquad
+    \bb{\mu}^{\dagger}=\bb{\mu}\,,\qquad
+    \bb{\mu}^{\mathrm{T}}=-\bb{\mu}\,,
+\end{alignat}
+such that the mass matrix $\bb{M}$ is fully symmetric while the moment matrix $\bb{\mu}$ is Hermitian and fully anti-symmetric. This then requires that the transitional magnetic moment elements are purely imaginary. Following the notation established in \req{massmom:2} we write down the two-generation mass and dipole matrices as
+\begin{alignat}{1}
+	\label{mix:eq:01a} \bb{m}_\mathrm{diag} &= 
+	\begin{pmatrix}
+		m_{1} & 0\\
+		0 & m_{2}
+	\end{pmatrix}\,,\ 
+	\bb{K} = 
+	\begin{pmatrix}
+		0 & m_{12}\\
+		m_{12} & 0
+	\end{pmatrix}\,,\ 
+	\bb{\mu} = 
+	\begin{pmatrix}
+		0 & i\mu\\
+		-i\mu & 0
+	\end{pmatrix}\,.
+\end{alignat}
+The intrinsic mass $\bb{m}_\mathrm{diag}$ are taken to be fully real, but we will allow the remaining elements to be complex. The overall mass-dipole matrix is then
+\begin{alignat}{1}
+	\label{mix:eq:02} \bb{\mathcal{M}} = 
+	\begin{pmatrix}
+		m_{1} & m_{12}-\frac{1}{2}\mu\gamma_{\alpha}F^{\alpha\beta}\gamma_{\beta}\\
+		m_{12}+\frac{1}{2}\mu\gamma_{\alpha}F^{\alpha\beta}\gamma_{\beta} & m_{2}
+	\end{pmatrix}\,,\ 
+\end{alignat}
+Curiously, the presence of the dipole means the mass-dipole matrix itself is not Hermitian.
+\begin{alignat}{1}
+	\label{mix:eq:03} \bb{\mathcal{M}}^{\dagger} = \gamma_{0}\bb{\mathcal{M}}\gamma_{0}\,.\ 
+\end{alignat}
+This however does not disturb the Hermitian character of the overall Lagrangian term. In general, a mass-dipole matrix such as \req{mix:eq:02} will always lead to a Hermitian Lagrangian as long as it only contains even powers of gamma matrices $\gamma$.
+
+We introduce the concept of a `mass-dipole' eigenstate $\tilde{m}(\vec{E},\vec{B})$ resulting from a rotation $\bb{W}(\theta)$ which completely diagonalizes $\bb{\mathcal{M}}$. This represents a unique basis that is distinct from the mass basis and the flavor basis. Since we have only two neutrino flavors, this rotation matrix is a Cabbibo-like mixing matrix
+\begin{alignat}{1}
+	\label{mix:eq:04} \bb{W} = 
+	\begin{pmatrix}
+		\cos{\theta} & -\sin{\theta}\\
+		\sin{\theta} & \cos{\theta}
+	\end{pmatrix}
+\end{alignat}
+We can neglect the impact of a CP breaking phase in the two-generation case in the presence of only a magnetic dipole. The mass-dipole diagonalization is then given by
+\begin{alignat}{1}
+	\label{mix:eq:05} \bb{\tilde{m}} = \mathrm{diag}(\tilde{m}_{1},\tilde{m}_{2})=\bb{W}^{T}\bb{\mathcal{M}}\bb{W}
+\end{alignat}
+%The resulting rotation angle $\theta$ is then determined by the flavor masses, the interaction coupling strength and the magnetic dipole. 
+%\begin{alignat}{1}
+%	\label{mix:eq:06a} \tan{2\theta}&=-\frac{2a+i\mu\gamma_{\alpha}F^{\alpha\beta}\gamma_{\beta}}{m_{2}-m_{1}}\,,\\
+%	\label{mix:eq:06b} \tilde{m}_{1,2}&=\frac{1}{2}\left(m_{1}+m_{2}\mp(m_{2}-m_{1})\cos{2\theta}\pm(2a+i\mu\gamma_{\alpha}F^{\alpha\beta}\gamma_{\beta})\sin{2\theta}\right)\,.
+%\end{alignat}
+%This demonstrates that a nonzero electromagnetic dipole can lead to flavor rotation outside what the mass matrix itself is nominally responsible for.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{unsrtnat}
+\bibliography{fritzsch-manuscript-refs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
