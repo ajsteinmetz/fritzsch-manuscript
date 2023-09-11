@@ -60,7 +60,7 @@ The size of the neutrino magnetic dipole moment is relatively small with a lower
 where $\mu_{B}$ is the Bohr magneton and $\mu_{\nu}^\mathrm{eff}$ is the effective and characteristic size of the neutrino magnetic moment.
 
 Considering higher order diagrams neutrino should manifestation non-minimal EM interactions~\citep{Shrock:1980vy} of the form
-\begin{gather}
+\begin{align}
     \label{mu:1}
     \mu_{\ell\ell'}=
 	\begin{pmatrix}
@@ -68,7 +68,7 @@ Considering higher order diagrams neutrino should manifestation non-minimal EM i
 		\mu_{e\mu}^{*} & \mu_{\mu\mu} & \mu_{\mu\tau} \\
 		\mu_{e\tau}^{*} & \mu_{\mu\tau}^{*} & \mu_{\tau\tau}
 	\end{pmatrix}\,,
-\end{gather}
+\end{align}
 where $\ell$ are the neutral lepton flavor indices $\ell\in\nu_{e},\nu_{\mu},\nu_{\tau}$. The transition moments are small~\cite{Shrock:1980vy} but BSM physics is capable of producing an abnormally large electromagnetic dipole~\citep{Lindner:2017uvt,Brdar:2020quo} within the bounds of~\req{momentbound:1} which may manifest itself in strong field or/and dense matter environments.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,7 +94,7 @@ For clarity of presentation we recall briefly textbook level neutrino physics: E
 		\nu_{3}
 	\end{pmatrix}\,,
 \end{alignat}
-where $\nu_{\ell}$ is the neutrino state vector written in the flavor basis while in the mass basis we use $\nu_{k}$ with $k\in1,2,3$. Hereafter we will use implied summation  over repeated indices.
+where $\nu_{\ell}$ is the neutrino state four-spinor written in the flavor basis while in the mass basis we use $\nu_{k}$ with $k\in1,2,3$. Hereafter we will use implied summation  over repeated indices.
 
 The parameterization of the components of the mixing matrix depends on the Dirac- or Majorana-nature of the neutrinos. We consider $U$ to be the Dirac neutrino matrix which in the standard parameterization~\citep{Schwartz:2014sze}, can be expressed as
 \begin{alignat}{1}
@@ -115,36 +115,24 @@ For the Majorana case of interest to us we must allow a greater number of comple
 Majorana neutrinos allow up to two additional complex phases $\rho$ and $\sigma$ which along with $\delta$ participate in CP-violation. The mixing matrix $V$ defined in \req{phases:1} can then be used to diagonalize the mass matrix $M$ from the flavor basis into the mass basis as
 \begin{align}
     \label{diag:1}
-    V_{\ell k}^{T}M_{\ell\ell'}V_{\ell'k'} = M_{kk'} = \mathrm{diag}(m_{\nu_{e}},m_{\nu_{\mu}},m_{3})\,.
+    V_{\ell k}^{T}M_{\ell\ell'}V_{\ell'k'} = M_{kk'} = \mathrm{diag}(m_{1},m_{2},m_{3})\,.
 \end{align}
 The masses $m_{k}$ are taken to be real and positive labelling the propagating states of the three neutrinos.
 
-The Majorana mass term in Lagrangian can be written in chiral flavor basis 
+The Majorana mass term in the Lagrangian can be written in chiral flavor basis as
 \begin{alignat}{1}
-	\label{mass:1} -\mathcal{L}_{\mathrm{mass}}^{\mathrm{Maj.}}=\frac{1}{2}\nu_{L,\ell}^{T}C^{\dag}M_{\ell\ell'}\nu_{L,\ell'}+\mathrm{h.c}\,.
+	\label{mass:1} -\mathcal{L}_{\mathrm{mass}}^{\mathrm{Maj.}}=\frac{1}{2}\nu_{L,\ell}^{T}C^{\dag}M_{\ell\ell'}\nu_{L,\ell'}+\mathrm{h.c}\,,\qquad
+    M_{\ell\ell'}^{T}=M_{\ell\ell'}\,,
 \end{alignat}
-$\nu_{L}$ refers to left-handed chiral states. The charge conjugation matrix $C$ is defined as in Ref.~\cite{Itzykson:1980rh}, p.692.
+where $\nu_{L}$ refers to left-handed chiral states. We note the Majorana mass matrix is symmetric and in general complex. The charge conjugation matrix $C$ is defined in Ref.~\cite{Itzykson:1980rh}, p.692.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Neutrino electromagnetic dipole moment dynamics}
 \label{sec:numoment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The electromagnetic dipole behavior of the neutrino depend on mathematical properties of the tensor product $\sigma_{\alpha\beta}F^{\alpha\beta}$ where $\sigma_{\alpha\beta}$ is the $4\times 4$ spin tensor defined by the commutator of the gamma matrices and $F^{\alpha\beta}$ is the electromagnetic field tensor. In our description, $F^{\alpha\beta}$ is the influence an externally prescribed field $A^{\alpha}_\mathrm{ext}(x)$ which imparts a force on the neutrino fields.
 
-Neutrinos being electrically neutral,  have no intrinsic magnetic moment due to their spin. Any magnetic moment present is higher order and anomalous. A small anomalous magnetic moment (AMM) can be introduced into the Lagrangian for the neutrino via a Pauli term. The effective Majorana neutrino AMM Pauli Lagrangian in the flavor basis is given by~\cite{Shrock:1980vy}
-\begin{align}
-	\label{moment:1} -\mathcal{L}_{\mathrm{AMM}}^\mathrm{Maj.}=\frac{1}{2}\nu_{L,\ell}^{T}C^{\dag}\left(\mu_{\ell\ell'}\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\right)\nu_{L,\ell'}+\mathrm{h.c.}
-\end{align}
-At this point spinors are still four component and $\sigma_{\alpha\beta}$ is the $4\times 4$ spin tensor defined by the commutator of the gamma matrices, $F^{\alpha\beta}$ is the electromagnetic field tensor. 
-
-The magnetic moment matrix acts in flavor space, see \req{mu:1} and it satisfies for CPT reasons  the following constraint~\cite{Giunti:2014ixa}
-\begin{alignat}{1}
-	\label{props:1}	M_{\ell\ell'}^{T}=M_{\ell\ell'}\,,\qquad
-    \mu_{\ell\ell'}^{\dag}=\mu_{\ell\ell'}\,,\qquad
-    \mu_{\ell\ell'}^{T}=-\mu_{\ell\ell'}\,,
-\end{alignat}
-{\it i.e.\/} the AMM matrix $\mu$ is Hermitian and fully anti-symmetric. This requires that the transitional magnetic moment elements are purely imaginary while all diagonal AMM matrix elements vanish. On the other hand considering \req{moment:1} Majorana mass matrix could be complex and symmetric, thus not necessarily Hermitian.  
-
-We prefer to work with EM contribution which is diagonal in spin space. Therefore we evaluate the product $\sigma_{\alpha\beta}F^{\alpha\beta}$ in the chiral representation following Feynman and Gell-mann\cite{Feynman:1958ty} yielding
+We prefer to work in the Weyl (chiral) spinor representation where the EM contribution is diagonal in spin space. Therefore we evaluate the product $\sigma_{\alpha\beta}F^{\alpha\beta}$ in the chiral representation following Feynman and Gell-mann\cite{Feynman:1958ty} yielding
 \begin{align}
     \label{chiral:1}
     \frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}=
@@ -157,12 +145,8 @@ We prefer to work with EM contribution which is diagonal in spin space. Therefor
         0 & \vec{\sigma}\cdot\vec{f}_{-}
     \end{pmatrix}\,,
 \end{align}
+where we have defined the complex electromagnetic field $\vec{f}_{\pm}=\vec{B}\pm i\vec{E}/c$.
 
-We defined the complex electromagnetic field $\vec{f}_{\pm}$ as
-\begin{align}
-    \vec{f}_{\pm}=\vec{B}\pm i\vec{E}/c\,,\qquad
-    \vec{f}_{\pm}^{*}=\vec{f}_{\mp}\,.
-\end{align}
 For later convenience we note how the EM invariants $\mathcal{S}$ and $\mathcal{P}$ can help understand the AMM term 
 \begin{gather}
     \left(\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{2}=
@@ -174,29 +158,31 @@ For later convenience we note how the EM invariants $\mathcal{S}$ and $\mathcal{
     \mathcal{P}\equiv\vec{B}\cdot\vec{E}/c\,,\qquad
     \frac{1}{2}\vec{f}_{\pm}\cdot\vec{f}_{\pm}=\mathcal{S}\pm i\mathcal{P}\,.
 \end{gather}
-Moreover, the for the product of $\vec{f}$ with its complex conjugate we find
+Moreover, for the product of $\vec{f}_{\pm}$ with its complex conjugate we find
 \begin{align}
         \label{cross:1}
-        \frac{1}{2}\left(\vec{\sigma}\cdot\vec{f}_{\pm}\right)\left(\vec{\sigma}\cdot\vec{f}_{\mp}\right)=\frac{1}{2}\left(B^{2}+E^{2}/c^{2}\right)\mp\vec{\sigma}\cdot\left(\vec{E}/c\times\vec{B}\right)\,,
+        \frac{1}{2}\left(\vec{\sigma}\cdot\vec{f}_{\pm}\right)\left(\vec{\sigma}\cdot\vec{f}_{\mp}\right)=T^{00}\mp \sigma_{i}T^{0i}\,,\\
+        T^{00}=\frac{1}{2}\left(B^{2}+E^{2}/c^{2}\right)\,,\qquad
+        T^{0i}=\frac{1}{c}\varepsilon_{ijk}E_{j}B_{k}\,,
 \end{align}
-where we recognize the  stress-energy tensor $T^{\alpha\beta}$ components $T^{00}$ and $T^{0i}$, respectively.  Considering the generalization of the $2\times 2$ Pauli matrices~\cite{.} we obtain the covariant form 
-\begin{align}       \label{cross:1a}    
-        \sigma^{\alpha}=(1,+\vec{\sigma})\,,\qquad
-        \bar\sigma^{\alpha}=(1,-\vec{\sigma})\,.
-\end{align}
-which mirrors the Weyl (chiral) representation of $\gamma^\alpha$
-\begin{align}       \label{cross:1c}    
-\gamma^\alpha =(off-diag I_2,I_2;\vec\sigma,-\vec\sigma)
-\end{align}
-This allows us to write 
-        \begin{align}
-        \label{cross:2}        \left(\vec{\sigma}\cdot\vec{f}_{+}\right)\left(\vec{\sigma}\cdot\vec{f}_{-}\right)=\sigma_{\alpha}\sigma_{\beta}T^{\alpha\beta}\,,\qquad
-        \left(\vec{\sigma}\cdot\vec{f}_{-}\right)\left(\vec{\sigma}\cdot\vec{f}_{+}\right)=\bar\sigma_{\alpha}\bar\sigma_{\beta}T^{\alpha\beta}\,,
+where we recognize the  stress-energy tensor $T^{\alpha\beta}$ components $T^{00}$ and $T^{0i}$, respectively. Using the identity in \req{cross:1} and \req{chiral:1} we also find the relationship
+\begin{align}
+    \label{cross:2}
+    \frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}=
+    -\gamma_{\alpha}\left(C^{\dag}\gamma_{\beta}C\right)T^{\alpha\beta}
 \end{align}
 
-
-where $\sigma^{\alpha}$ and $\bar\sigma^{\alpha}$ are the Pauli 4-vectors and $T^{\alpha\beta}$ is the EM stress-energy tensor.
-
+Neutrinos being electrically neutral, have no intrinsic magnetic moment due to their spin. Any magnetic moment present is higher order and anomalous. A small anomalous magnetic moment (AMM) can be introduced into the Lagrangian for the neutrino via a Pauli term. The effective Majorana AMM Pauli Lagrangian in the flavor basis is given by~\cite{Shrock:1980vy}
+\begin{align}
+	\label{moment:1} -\mathcal{L}_{\mathrm{AMM}}^\mathrm{Maj.}=\frac{1}{2}\nu_{L,\ell}^{T}C^{\dag}\left(\mu_{\ell\ell'}\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\right)\nu_{L,\ell'}+\mathrm{h.c.}
+\end{align}
+The left-handed spinors $\nu_{L}$ are still four component. The magnetic moment matrix acts in flavor space, see \req{mu:1}, and it satisfies for CPT reasons the following constraints~\cite{Giunti:2014ixa}
+\begin{alignat}{1}
+	\label{props:1}
+    \mu_{\ell\ell'}^{\dag}=\mu_{\ell\ell'}\,,\qquad
+    \mu_{\ell\ell'}^{T}=-\mu_{\ell\ell'}\,,
+\end{alignat}
+{\it i.e.\/} the AMM matrix $\mu$ is Hermitian and fully anti-symmetric. This requires that the transitional magnetic moment elements are purely imaginary while all diagonal AMM matrix elements vanish.
 
 We can combine the AMM contribution and the mass term in~\req{mass:1} and~\req{moment:1} to write an effective Lagrangian containing both
 \begin{align}
@@ -211,23 +197,7 @@ We define the generalized mass-dipole matrix $\mathcal{M}_{\ell\ell'}$ present i
     \mathcal{M}_{\ell\ell'}(\vec{E},\vec{B})\equiv M_{\ell\ell'}+\mu_{\ell\ell'}\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\,.
 \end{align}
 
-
-We note that the Lagrangian term in \req{massmom:1} is acting to the right on a left-handed chiral neutrino spinor (with the right-handed charged conjugated portion being acted upon in the Hermitian conjugate). Therefore, we can rewrite \req{massmom:1} in two-component form as
-\begin{align}
-    \label{massmom:1a}
-    \mathcal{L}_\mathrm{eff}^\mathrm{Maj.} = 
-    -\frac{1}{2}\nu_{L,2,\ell}^{T}C_{2}^{\dag}\left(M_{\ell\ell'}+\mu_{\ell\ell'}\vec{\sigma}\cdot\vec{f}_{+}\right)\nu_{L,2,\ell'}+\mathrm{h.c.}
-\end{align}
-where the operator $C_{2}$ is the charge conjugation matrix is written as a $2\times 2$ matrix.
-
 As neutrinos must propagate as energy eigenstates, it is the diagonalization of the Hermitian product $\mathcal{M}\mathcal{M}^{\dag}$ of \req{massmom:2} rather than \req{diag:1} which must be accomplished. If one uses the original rotation matrix defined in \req{phases:1}, the result will still possess off-diagonal terms. These electromagnetic components then facilitate time-dependant oscillation among the free-particle mass eigenstates~\cite{Giunti:2014ixa}. We seek to then describe a modified rotation which places the neutrinos into their true propagating energy eigenstates.
-
-At this point it is good to remember that quantum mechanics predicts that relativistic massive neutral particles with magnetic dipoles in magnetic fields have energy eigenstates~\cite{Steinmetz:2018ryf} of
-\begin{align}
-    \label{kgp:1}
-    E(p,B) = \sqrt{m^{2}c^{4}\pm2\mu Bmc^{2}+p^{2}c^{2}}
-\end{align}
-depending on the spin alignment of the particle with the magnetic field. Therefore neutrinos propagating in EM fields will not be travelling in free-particle mass eigenstates, but magnetized states.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Toy model: Magnetic-flavor mixing for two generations}
@@ -248,8 +218,8 @@ Following the properties established in \req{massmom:2} and \req{props:1} we wri
 		-i\delta\mu & 0
 	\end{pmatrix}\,.
 \end{alignat}
-The AMM coupling $\delta\mu$ is taken to be real with a coefficient $i$. Using \req{mix:1}, we write the mass-dipole matrix in \req{massmom:1a} in terms of spin-flavor components as
-\begin{gather}
+The AMM coupling $\delta\mu$ is taken to be real with a coefficient $i$. Using \req{mix:1}, we write the mass-dipole matrix in \req{massmom:2} in terms of spin-flavor components as
+\begin{align}
 	\label{mix:2a}
     \mathcal{M} = 
 	\begin{pmatrix}
@@ -260,13 +230,13 @@ The AMM coupling $\delta\mu$ is taken to be real with a coefficient $i$. Using \
         m_{\nu_{e}} & a_{+}\\
         a_{-} & m_{\nu_{\mu}}
     \end{pmatrix}\,.
-\end{gather}
+\end{align}
 We define the auxiliary complex variables
-\begin{gather}
+\begin{align}
     \label{mix:2b}
     a_{\pm}={\delta m}\pm i\delta\mu\vec{\sigma}\cdot\vec{f}_{+}\,,\qquad
     a_{\pm}^{\dag}={\delta m}^{*}\mp i\delta\mu\vec{\sigma}\cdot\vec{f}_{-}\,,
-\end{gather}
+\end{align}
 such that \req{mix:2a} can be written more compactly.
 
 The eigenvalues of \req{mix:2b} are then field dependant effective masses $\tilde{m}(E,B)$ resulting from a rotation $W$ which completely diagonalizes the Hermitian quantity 
@@ -279,17 +249,17 @@ The eigenvalues of \req{mix:2b} are then field dependant effective masses $\tild
     \end{pmatrix}\,.
 \end{align}
 This new magnetized basis is distinct from the mass basis and the flavor basis representations described in \req{basis:1}. We note that $a_{\pm}a_{\pm}^{\dag}$ will contain terms found in \req{cross:1} and \req{cross:2}. While the mass elements $m_{\nu_{e}}$, $m_{\nu_{\mu}}$, and ${\delta m}$ are generally complex, we will for illustration take them to be fully real
-\begin{gather}
+\begin{align}
     m_{\nu_{e}}=m_{\nu_{e}}^{*}\,,\qquad
     m_{\nu_{\mu}}=m_{\nu_{\mu}}^{*}\,,\qquad
     \delta m^{*}=\delta m\,.
-\end{gather}
+\end{align}
 The diagonal elements of \req{herm:1} are then more explicitly
-\begin{gather}
+\begin{align}
     \label{elements:1}
     |m_{\nu_{e}}|^{2}+a_{+}a_{+}^{\dag}=m_{\nu_{e}}^{2}+\delta m^{2}+2\delta m \delta\mu\vec{\sigma}\cdot\vec{E}+\delta\mu^{2}\sigma_{\alpha}\sigma_{\beta}T^{\alpha\beta}\,,\\
     |m_{\nu_{\mu}}|^{2}+a_{-}a_{-}^{\dag}=m_{\nu_{\mu}}^{2}+\delta m^{2}-2\delta m \delta\mu\vec{\sigma}\cdot\vec{E}+\delta\mu^{2}\sigma_{\alpha}\sigma_{\beta}T^{\alpha\beta}\,,
-\end{gather}
+\end{align}
 which display terms linear in fields and quadratic in fields.
 
 BELOW HERE NEEDS MATH/NOTATION REVISIONS: Self note: Nice rotations can be described for the pure E case, pure B case, and plane waves. General solution to rotation is illusive.

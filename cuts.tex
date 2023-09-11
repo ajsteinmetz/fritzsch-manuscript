@@ -10,6 +10,9 @@ The most general unitary $2\times2$ matrix can be written as
 \end{alignat}
 which contains up to three phases $\alpha,\beta,\gamma$ and angle $\theta$.
 
+
+
+
 Since transition AMM elements serve to break lepton number conservation allowing for $\nu_{\ell}+\gamma\rightarrow\nu_{\ell'}$ processes, neutrinos could be remixed when exposed to strong EM fields similar to remixing within matter in the Mikheyev-Smirnov-Wolfenstein (MSW) effect~\citep{Wolfenstein:1977ue,Mikheyev:1985zog}.
     
  \begin{align}
@@ -18,3 +21,43 @@ Since transition AMM elements serve to break lepton number conservation allowing
     \frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\psi_{R} = \vec{\sigma}\cdot\vec{f}_{-}\psi_{R}\,,\qquad
 \end{align}
 where $\psi_{L}$ and $\psi_{R}$ are arbitrary left and right-handed two-component spinors.
+
+
+
+
+At this point it is good to remember that quantum mechanics predicts that relativistic massive neutral particles with magnetic dipoles in magnetic fields have energy eigenstates~\cite{Steinmetz:2018ryf} of
+\begin{align}
+    \label{kgp:1}
+    E(p,B) = \sqrt{m^{2}c^{4}\pm2\mu Bmc^{2}+p^{2}c^{2}}
+\end{align}
+depending on the spin alignment of the particle with the magnetic field. Therefore neutrinos propagating in EM fields will not be travelling in free-particle mass eigenstates, but magnetized states.
+
+
+
+
+Considering the generalization of the $2\times 2$ Pauli matrices~\cite{Ohlsson:2011zz} we obtain the covariant form 
+\begin{align}       \label{cross:1a}    
+        \sigma^{\alpha}=(1,+\vec{\sigma})\,,\qquad
+        \bar\sigma^{\alpha}=(1,-\vec{\sigma})\,.
+\end{align}
+which mirrors the Weyl (chiral) representation of $\gamma^\alpha$
+\begin{align}       \label{cross:1c}    
+\gamma^\alpha =(off-diag I_2,I_2;\vec\sigma,-\vec\sigma)
+\end{align}
+This allows us to write 
+        \begin{align}
+        \label{cross:2}        \left(\vec{\sigma}\cdot\vec{f}_{+}\right)\left(\vec{\sigma}\cdot\vec{f}_{-}\right)=\sigma_{\alpha}\sigma_{\beta}T^{\alpha\beta}\,,\qquad
+        \left(\vec{\sigma}\cdot\vec{f}_{-}\right)\left(\vec{\sigma}\cdot\vec{f}_{+}\right)=\bar\sigma_{\alpha}\bar\sigma_{\beta}T^{\alpha\beta}\,,
+\end{align}
+where $\sigma^{\alpha}$ and $\bar\sigma^{\alpha}$ are the Pauli 4-vectors and $T^{\alpha\beta}$ is the EM stress-energy tensor.
+
+
+
+
+We note that the Lagrangian term in \req{massmom:1} is acting to the right on a left-handed chiral neutrino spinor (with the right-handed charged conjugated portion being acted upon in the Hermitian conjugate). Therefore, we can rewrite \req{massmom:1} in two-component form as
+\begin{align}
+    \label{massmom:1a}
+    \mathcal{L}_\mathrm{eff}^\mathrm{Maj.} = 
+    -\frac{1}{2}\nu_{L,2,\ell}^{T}C_{2}^{\dag}\left(M_{\ell\ell'}+\mu_{\ell\ell'}\vec{\sigma}\cdot\vec{f}_{+}\right)\nu_{L,2,\ell'}+\mathrm{h.c.}
+\end{align}
+where the operator $C_{2}$ is the charge conjugation matrix is written as a $2\times 2$ matrix.
