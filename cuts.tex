@@ -166,3 +166,124 @@ Using \req{w:1}, the eigenvalues of the mass-dipole matrix are therefore
 \req{eigenvalue:1} shows that the mass splitting between the two propagating states is modified by the off-diagonal couplings in the mass matrix as well as the magnetic dipole energy $\mu B$.
 
 If the magnetic field is set to zero $(\vec{B}=0)$, the above rotation simplifies to that of just an off-diagonal mass. The complex phase $\phi$ vanishes in a such a limit, while the rotation angle $\theta$ relaxes to the free-particle value. The inclusion of an electric field is also possible in this formation as described earlier however the mass-dipole matrix is rendered non-Hermitian and the eigenvalues more complicated in form similar to that of a complex off-diagonal mass ${\delta m}$. Mathematically both break Hermiticity in the same manner.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Raw materials}
+\label{sec:raw}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The Hermitian mass-dipole square $\mathcal{M}\mathcal{M}^{\dag}$ including the matter term $A$ is
+\begin{align}
+    \label{hermz:1}
+    \begin{split}
+        (\mathcal{M}\mathcal{M}^{\dag})_{\ell\ell'}
+        &=(MM^{\dag})_{\ell\ell'}+A_{\ell\ell'}+(\mu\mu^{\dag})_{\ell\ell'}\frac{1}{4}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\\
+        &+(M\mu^{\dag})_{\ell\ell'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}
+        +(\mu M^{\dag})_{\ell\ell'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\,,        
+    \end{split}
+\end{align}
+where we have also included the linear term for matter weak interactions~\cite{Wolfenstein:1977ue} given by
+\begin{align}
+    \label{matter:1}
+    A_{\ell\ell'}=A
+    \begin{pmatrix}
+        1 & 0\\
+        0 & 0
+    \end{pmatrix}\,,\qquad
+    A\propto G_{F}\rho_{e}\,.
+\end{align}
+\req{herm:1} can be simplified somewhat further by recalling that $M^{\dag}=M$ and $\mu^{\dag}=\mu$.
+
+
+
+
+
+Despite the fact that $V$ will not fully diagonalize \req{herm:1}, it greatly simplifies the expression to
+\begin{align}
+    \begin{split}
+    \label{hermz:2}
+    (V^{\dag}\mathcal{M}\mathcal{M}^{\dag}V)_{kk'}
+    &=m_{kk'}^{2}+A_{kk'}+\mu^{2}_{kk'}\frac{1}{4}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\,,\\
+    &+(m\mu)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}
+    +(\mu m)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\,.
+    \end{split}
+\end{align}
+We print the following matrices in \req{herm:2} explicitly % Flip order of equations.
+\begin{align}
+    \label{hermz:3}
+    m_{kk'}^{2}\!=\!
+    \begin{pmatrix}
+        m_{1}^{2} & 0\\
+        0 & m_{2}^{2}
+    \end{pmatrix}\,,\quad
+    \mu^{2}_{kk'}\!=\!
+    \begin{pmatrix}
+        \delta\mu^{2} & 0\\
+        0 & \delta\mu^{2}
+    \end{pmatrix}\,,\quad
+    A_{kk'}\!=\!A
+    \begin{pmatrix}
+        \cos^{2}\theta & \cos\theta\sin\theta\\
+        \cos\theta\sin\theta & \sin^{2}\theta
+    \end{pmatrix}\,,\\
+    (m\mu)_{kk'}=
+    \begin{pmatrix}
+        0 & i\delta\mu m_{1}\\
+        -i\delta\mu m_{2} & 0
+    \end{pmatrix}\,,\quad
+    (\mu m)_{kk'}=
+    \begin{pmatrix}
+        0 & i\delta\mu m_{2}\\
+        -i\delta\mu m_{1} & 0
+    \end{pmatrix}\,.    
+\end{align}
+The last two terms which are linear in fields in \req{herm:2} can be rearranged into a more useful form becoming
+\begin{align}
+    \label{hermz:4}
+    \begin{split}
+    &(m\mu)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}
+    +(\mu m)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)=\\
+    &\begin{pmatrix}
+        0 & +1\\
+        +1 & 0
+    \end{pmatrix}i\delta\mu(m_{1}-m_{2})\sigma_{\alpha\beta}^\mathrm{AH}F^{\alpha\beta}/2
+    +
+    \begin{pmatrix}
+        0 & +1\\
+        -1 & 0
+    \end{pmatrix}i\delta\mu(m_{1}+m_{2})\sigma_{\alpha\beta}^\mathrm{H}F^{\alpha\beta}/2\,,
+    \end{split}
+\end{align}
+where we define the Hermitian and anti-Hermitian portions of the spin tensor
+\begin{align}
+    \label{antiherm:1}
+    \sigma_{\alpha\beta}^\mathrm{H}=\frac{1}{2}\left(\sigma_{\alpha\beta}^{\dag} + \sigma_{\alpha\beta}\right)\,,\qquad
+    \sigma_{\alpha\beta}^\mathrm{AH}=\frac{1}{2}\left(\sigma_{\alpha\beta}^{\dag} - \sigma_{\alpha\beta}\right)\,.
+\end{align}
+The reason that defining \req{antiherm:1} has utility, is that the product $\sigma_{\alpha\beta}^\mathrm{H}F^{\alpha\beta}$ projects out the the $\vec{\sigma}\cdot\vec{B}$ magnetic terms while $\sigma_{\alpha\beta}^\mathrm{AH}F^{\alpha\beta}$ projects out the $i\vec{\sigma}\cdot\vec{E}$ electric terms. It is interesting to note that if the free-particle masses are degenerate $m_{1}=m_{2}$, the linear off-diagonal electric field term vanishes. This indicates that the presence of an electrical field is responsible for splitting between the masses which is analogous to level splitting of atomic orbitals in electrical fields.
+
+To finally diagonalize \req{herm:2} and find its eigenvalues, we recast the expression symbolically as
+\begin{align}
+    \label{hermz:5}
+    (V^{\dag}\mathcal{M}\mathcal{M}^{\dag}V)_{kk'} =
+    \begin{pmatrix}
+        A & X+iY\\
+        X-iY & B
+    \end{pmatrix}\,,
+\end{align}
+with the explicit elements
+\begin{align}
+    A = m_{1}^{2}+A\cos^{2}\theta+\delta\mu^{2}\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\,,\\
+    B = m_{2}^{2}+A\sin^{2}\theta+\delta\mu^{2}\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\,,\\
+    X = \\
+    Y =\,,
+\end{align}
+The eigenvalues $\lambda_{j}=\widetilde m_{j}^{2}(E,B)$ of \req{herm:5} are then obtained from the characteristic equation
+\begin{align}
+    (A-\lambda_{j})(B-\lambda_{j})-X^{2}-Y^{2}=0\,.
+\end{align}
+WRITE OUT THE EIGENVALUES FROM QUADRATIC SOLUTION.
