@@ -27,7 +27,7 @@
  
 \begin{document}
 
-\chapter[Dynamic flavor mixing through transition moments]{Dynamics flavor mixing through transition moments\label{JR_ch1}}
+\chapter[Dynamic flavor mixing through transition moments]{Dynamic flavor mixing through transition moments\label{JR_ch1}}
 
 \author[J. Rafelski and A. Steinmetz]{Johann Rafelski and Andrew Steinmetz\footnote{JohannR@Arizona.EDU, AJSteinmetz@Arizona.EDU}}
 \aindx{Rafelski, J.}
@@ -50,7 +50,9 @@ As neutrinos are naturally massless in the standard model the observed flavor os
 \label{sec:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this work we look at the connection between neutrino transition magnetic dipole moments~\cite{Shrock:1980vy,Shrock:1982sc} and neutrino flavor oscillation. Neutrinos once were the dominant form of energy density in the universe~\cite{Rafelski:2023emw} and are also important in the context of stellar evolution and supernova. There is profound interest in understanding their physical properties due to their importance as a bridge to beyond standard model (BSM) physics~\cite{DUNE:2020fgq}. It is also unknown which hierarchy neutrinos follow therefore probing the EM properties of neutrinos could contribute evidence for one model over the other. Their electromagnetic (EM) properties have been considered before~\cite{Giunti:2014ixa} but to best of our knowledge this is a first consideration of EM contribution to flavor oscillation.
+In this work we look at the connection between neutrino transition magnetic dipole moments~\cite{Shrock:1980vy,Shrock:1982sc} and neutrino flavor oscillation. Neutrinos once were the dominant form of energy density in the universe~\cite{Rafelski:2023emw} and are also important in the context of stellar evolution and supernova. There is profound interest in understanding their physical properties due to their importance as a bridge to beyond standard model (BSM) physics~\cite{DUNE:2020fgq}. It is also unknown which hierarchy neutrinos follow therefore probing the EM properties of neutrinos could contribute evidence for one model over the other. Their electromagnetic (EM) properties have been considered before~\cite{Giunti:2014ixa,Chukhnova:2019oum,Popov:2019nkr} but to best of our knowledge this is a first consideration of the full EM contribution to flavor oscillation.
+
+Neutrinos being electrically neutral, have no intrinsic magnetic moment due to their spin, therefore any magnetic moment present is considered anomalous~\cite{Steinmetz:2018ryf}. A small anomalous magnetic moment (AMM) can be introduced into the neutrino Lagrangian via a Pauli term. Since transition AMM elements serve to break lepton number conservation allowing for $\nu_{\ell}+\gamma\rightarrow\nu_{\ell'}$ processes, neutrinos could be remixed when exposed to strong EM fields similar to remixing within matter in the Mikheyev-Smirnov-Wolfenstein (MSW) effect~\citep{Wolfenstein:1977ue,Mikheyev:1985zog}.
 
 The size of the neutrino magnetic dipole moment is relatively small with a lower bound determined by the standard model and an upper bound from reactor or solar observations given by~\citep{Studenikin:2016ykv,Canas:2015yoa,AristizabalSierra:2021fuc}
 \begin{align}
@@ -69,7 +71,7 @@ Considering higher order diagrams neutrino should manifestation non-minimal EM i
 		\mu_{e\tau}^{*} & \mu_{\mu\tau}^{*} & \mu_{\tau\tau}
 	\end{pmatrix}\,,
 \end{align}
-where $\ell$ are the neutral lepton flavor indices $\ell\in\nu_{e},\nu_{\mu},\nu_{\tau}$. The transition moments are small~\cite{Shrock:1980vy} but BSM physics is capable of producing an abnormally large electromagnetic dipole~\citep{Lindner:2017uvt,Brdar:2020quo} within the bounds of~\req{momentbound:1} which may manifest itself in strong field or/and dense matter environments.
+where $\ell$ are the neutral lepton flavor indices $\ell\in\nu_{e},\nu_{\mu},\nu_{\tau}$. The transition moments are generally considered small but BSM physics is capable of producing an abnormally large electromagnetic dipole~\citep{Ohlsson:2012kf,Lindner:2017uvt,Brdar:2020quo} within the bounds of~\req{momentbound:1} which may manifest itself in strong field or/and dense matter environments.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Description of neutrino flavor mixing}
@@ -124,7 +126,7 @@ The Majorana mass term in the Lagrangian can be written in chiral flavor basis a
 	\label{mass:1} -\mathcal{L}_{\mathrm{mass}}^{\mathrm{Maj.}}=\frac{1}{2}\nu_{L,\ell}^{T}C^{\dag}M_{\ell\ell'}\nu_{L,\ell'}+\mathrm{h.c}\,,\qquad
     M_{\ell\ell'}^{T}=M_{\ell\ell'}\,,
 \end{alignat}
-where $\nu_{L}$ refers to left-handed chiral states. We note the Majorana mass matrix is symmetric and in general complex. The charge conjugation matrix $C$ is defined in Ref.~\cite{Itzykson:1980rh}, p.692.
+where $\nu_{L}$ refers to left-handed chiral states. We note the Majorana mass matrix is symmetric and in general complex~\cite{Adhikary:2013bma}. The charge conjugation matrix $C$ is defined in Ref.~\cite{Itzykson:1980rh}, p.692.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Neutrino electromagnetic dipole moment dynamics}
@@ -135,7 +137,7 @@ The electromagnetic dipole behavior of the neutrino depend on mathematical prope
 We prefer to work in the Weyl (chiral) spinor representation where the EM contribution is diagonal in spin space. Therefore we evaluate the product $\sigma_{\alpha\beta}F^{\alpha\beta}$ in the chiral representation following Feynman and Gell-mann\cite{Feynman:1958ty} yielding
 \begin{align}
     \label{chiral:1}
-    \frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}=
+    -\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}=
     \begin{pmatrix}
         \vec{\sigma}\cdot(\vec{B}+i\vec{E}/c) & 0\\
         0 & \vec{\sigma}\cdot(\vec{B}-i\vec{E}/c)
@@ -161,18 +163,21 @@ For later convenience we note how the EM invariants $\mathcal{S}$ and $\mathcal{
 Moreover, for the product of $\vec{f}_{\pm}$ with its complex conjugate we find
 \begin{align}
         \label{cross:1}
-        \frac{1}{2}\left(\vec{\sigma}\cdot\vec{f}_{\pm}\right)\left(\vec{\sigma}\cdot\vec{f}_{\mp}\right)=T^{00}\mp \sigma_{i}T^{0i}\,,\\
-        T^{00}=\frac{1}{2}\left(B^{2}+E^{2}/c^{2}\right)\,,\qquad
-        T^{0i}=\frac{1}{c}\varepsilon_{ijk}E_{j}B_{k}\,,
+        \frac{1}{2}\left(\vec{\sigma}\cdot\vec{f}_{\pm}\right)\left(\vec{\sigma}\cdot\vec{f}_{\mp}\right)=T^{00}\mp \sigma_{i}T^{0i}\,,
 \end{align}
-where we recognize the  stress-energy tensor $T^{\alpha\beta}$ components $T^{00}$ and $T^{0i}$, respectively. Using the identity in \req{cross:1} and \req{chiral:1} we also find the relationship
+where we recognize the  stress-energy tensor $T^{\alpha\beta}$ components $T^{00}$ and $T^{0i}$ respectively
+\begin{align}
+    T^{00}=\frac{1}{2}\left(B^{2}+E^{2}/c^{2}\right)\,,\qquad
+    T^{0i}=\frac{1}{c}\varepsilon_{ijk}E_{j}B_{k}\,.
+\end{align}
+Using the identity in \req{chiral:1} and \req{cross:1} we also find the interesting relationship
 \begin{align}
     \label{cross:2}
     \frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}=
-    -\gamma_{\alpha}\left(C^{\dag}\gamma_{\beta}C\right)T^{\alpha\beta}
+    -\gamma_{\alpha}\left(C^{\dag}\gamma_{\beta}C\right)T^{\alpha\beta}\,.
 \end{align}
 
-Neutrinos being electrically neutral, have no intrinsic magnetic moment due to their spin. Any magnetic moment present is higher order and anomalous. A small anomalous magnetic moment (AMM) can be introduced into the Lagrangian for the neutrino via a Pauli term. The effective Majorana AMM Pauli Lagrangian in the flavor basis is given by~\cite{Shrock:1980vy}
+Now that we have elaborated on the relevant EM field identities, we turn to the magnetic dipole. The effective Majorana AMM Pauli Lagrangian in the flavor basis is given by~\cite{Shrock:1980vy}
 \begin{align}
 	\label{moment:1} -\mathcal{L}_{\mathrm{AMM}}^\mathrm{Maj.}=\frac{1}{2}\nu_{L,\ell}^{T}C^{\dag}\left(\mu_{\ell\ell'}\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\right)\nu_{L,\ell'}+\mathrm{h.c.}
 \end{align}
@@ -194,7 +199,7 @@ We can combine the AMM contribution and the mass term in~\req{mass:1} and~\req{m
 We define the generalized mass-dipole matrix $\mathcal{M}_{\ell\ell'}$ present in \req{massmom:1} as
 \begin{align}
 	\label{massmom:2}
-    \mathcal{M}_{\ell\ell'}(\vec{E},\vec{B})\equiv M_{\ell\ell'}+\mu_{\ell\ell'}\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\,.
+    \mathcal{M}_{\ell\ell'}(E,B)\equiv M_{\ell\ell'}+\mu_{\ell\ell'}\frac{1}{2}\sigma_{\alpha\beta}F^{\alpha\beta}\,.
 \end{align}
 
 As neutrinos must propagate as energy eigenstates, it is the diagonalization of the Hermitian product $\mathcal{M}\mathcal{M}^{\dag}$ of \req{massmom:2} rather than \req{diag:1} which must be accomplished. If one uses the original rotation matrix defined in \req{phases:1}, the result will still possess off-diagonal terms. These electromagnetic components then facilitate time-dependant oscillation among the free-particle mass eigenstates~\cite{Giunti:2014ixa}. We seek to then describe a modified rotation which places the neutrinos into their true propagating energy eigenstates.
@@ -203,9 +208,9 @@ As neutrinos must propagate as energy eigenstates, it is the diagonalization of 
 \section{Toy model: Magnetic-flavor mixing for two generations}
 \label{sec:mix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Considering experimental data on neutrino oscillations, it is understood that either the two heavier (normal hierarchy) or the two lighter (inverted hierarchy) neutrino states are close together in mass. If the electromagnetic properties of the neutrino do indeed lead to flavor mixing effects, then it is likely the closer pair of neutrino mass states are most sensitive to the phenomenon~\cite{Bethe:1986ej}. 
+Considering experimental data on neutrino oscillations, it is understood that either the two heavier (normal hierarchy) or the two lighter (inverted hierarchy) neutrino states are close together in mass. If the electromagnetic properties of the neutrino do indeed lead to flavor mixing effects, then it is likely the closer pair of neutrino mass states that are most sensitive to effective potentials phenomenon. In the spirit of Bethe~\cite{Bethe:1986ej}, we therefore explore the $N=2$ two generation $(\nu_{e},\nu_{\mu})$ model.
 
-Following the properties established in \req{massmom:2} and \req{props:1} we write down the two-generation $(\nu_{e},\nu_{\mu})$ mass and dipole matrices as
+Following the properties established in \req{props:1} and \req{massmom:2} we write down the two generation mass and dipole matrices as
 \begin{alignat}{1}
 	\label{mix:1} M_{\ell\ell'}= 
 	\begin{pmatrix}
@@ -218,101 +223,138 @@ Following the properties established in \req{massmom:2} and \req{props:1} we wri
 		-i\delta\mu & 0
 	\end{pmatrix}\,.
 \end{alignat}
-The AMM coupling $\delta\mu$ is taken to be real with a coefficient $i$. Using \req{mix:1}, we write the mass-dipole matrix in \req{massmom:2} in terms of spin-flavor components as
-\begin{align}
-	\label{mix:2a}
-    \mathcal{M} = 
-	\begin{pmatrix}
-		m_{\nu_{e}} & {\delta m}+i\delta\mu\vec{\sigma}\cdot\vec{f}_{+}\\
-		{\delta m}-i\delta\mu\vec{\sigma}\cdot\vec{f}_{+} & m_{\nu_{\mu}}
-	\end{pmatrix}=
-    \begin{pmatrix}
-        m_{\nu_{e}} & a_{+}\\
-        a_{-} & m_{\nu_{\mu}}
-    \end{pmatrix}\,.
-\end{align}
-We define the auxiliary complex variables
-\begin{align}
-    \label{mix:2b}
-    a_{\pm}={\delta m}\pm i\delta\mu\vec{\sigma}\cdot\vec{f}_{+}\,,\qquad
-    a_{\pm}^{\dag}={\delta m}^{*}\mp i\delta\mu\vec{\sigma}\cdot\vec{f}_{-}\,,
-\end{align}
-such that \req{mix:2a} can be written more compactly.
-
-The eigenvalues of \req{mix:2b} are then field dependant effective masses $\tilde{m}(E,B)$ resulting from a rotation $W$ which completely diagonalizes the Hermitian quantity 
-\begin{align}
-    \label{herm:1}
-    \mathcal{M}\mathcal{M}^{\dag}=
-    \begin{pmatrix}
-        |m_{\nu_{e}}|^{2}+a_{+}a_{+}^{\dag} & m_{\nu_{e}}a_{-}^{\dag}+a_{+}m_{\nu_{\mu}}^{*}\\
-        a_{-}m_{\nu_{e}}^{*}+m_{\nu_{\mu}}a_{+}^{\dag} & |m_{\nu_{\mu}}|^{2}+a_{-}a_{-}^{\dag}\\
-    \end{pmatrix}\,.
-\end{align}
-This new magnetized basis is distinct from the mass basis and the flavor basis representations described in \req{basis:1}. We note that $a_{\pm}a_{\pm}^{\dag}$ will contain terms found in \req{cross:1} and \req{cross:2}. While the mass elements $m_{\nu_{e}}$, $m_{\nu_{\mu}}$, and ${\delta m}$ are generally complex, we will for illustration take them to be fully real
+The AMM coupling $\delta\mu$ is taken to be real with a pure imaginary coefficient. While the mass elements $m_{\nu_{e}}$, $m_{\nu_{\mu}}$, and ${\delta m}$ are generally complex, we will for illustration take them to be fully real
 \begin{align}
     m_{\nu_{e}}=m_{\nu_{e}}^{*}\,,\qquad
     m_{\nu_{\mu}}=m_{\nu_{\mu}}^{*}\,,\qquad
-    \delta m^{*}=\delta m\,.
+    \delta m^{*}=\delta m\,,
 \end{align}
-The diagonal elements of \req{herm:1} are then more explicitly
+making the mass matrix $M$ Hermitian. This allows an easier evaluate the EM contribution to mixing rather than complications from the mass matrix.
+
+Using \req{mix:1}, we write the mass-dipole matrix in \req{massmom:2} in terms of spin-flavor components as
 \begin{align}
-    \label{elements:1}
-    |m_{\nu_{e}}|^{2}+a_{+}a_{+}^{\dag}=m_{\nu_{e}}^{2}+\delta m^{2}+2\delta m \delta\mu\vec{\sigma}\cdot\vec{E}+\delta\mu^{2}\sigma_{\alpha}\sigma_{\beta}T^{\alpha\beta}\,,\\
-    |m_{\nu_{\mu}}|^{2}+a_{-}a_{-}^{\dag}=m_{\nu_{\mu}}^{2}+\delta m^{2}-2\delta m \delta\mu\vec{\sigma}\cdot\vec{E}+\delta\mu^{2}\sigma_{\alpha}\sigma_{\beta}T^{\alpha\beta}\,,
+	\label{mix:2}
+    \mathcal{M}_{\ell\ell'} = 
+	\begin{pmatrix}
+		m_{\nu_{e}} & {\delta m}+i\delta\mu\sigma_{\alpha\beta}F^{\alpha\beta}/2\\
+		{\delta m}-i\delta\mu\sigma_{\alpha\beta}F^{\alpha\beta}/2 & m_{\nu_{\mu}}
+	\end{pmatrix}\,.
 \end{align}
-which display terms linear in fields and quadratic in fields.
-
-BELOW HERE NEEDS MATH/NOTATION REVISIONS: Self note: Nice rotations can be described for the pure E case, pure B case, and plane waves. General solution to rotation is illusive.
-
-A suitable unitary $2\times2$ rotation matrix to diagonalize \req{herm:1} can be written as
-\begin{alignat}{1}
-	\label{mix:4} W(\theta,\phi) = 
-    \left(
-    \begin{array}{cc}
-         \cos (\theta ) & e^{i \phi } \sin (\theta ) \\
-         -e^{-i \phi } \sin (\theta ) & \cos (\theta ) \\
-    \end{array}
-    \right)\,,\qquad
-    W_{\ell k}W^{\dag}_{\ell' k} = 1\,,
-\end{alignat}
-which contains one complex phase $\phi$ and one angle $\theta$. The mass-dipole diagonalization is then given by the expression
-\begin{alignat}{1}
-	\label{mix:5} \tilde{m}_{kk'} = \mathrm{diag}(\tilde{m}_{1}^{2},\tilde{m}_{2}^{2})=W_{\ell k}^{\dag}\left(\mathcal{M}\mathcal{M}^{\dag}\right)_{\ell\ell'}W_{\ell'k'}
-\end{alignat}
-The assignment of the parameters $\theta$ and $\phi$ can be obtained from the
-
-where we have defined the difference in diagonal mass elements as
+In terms of \req{mix:1}, we can write the Hermitian mass-dipole square $\mathcal{M}\mathcal{M}^{\dag}$ as
 \begin{align}
-    \Delta m = m_{\nu_{\mu}} - m_{\nu_{e}}\,.
+    \label{herm:1}
+    \begin{split}
+        (\mathcal{M}\mathcal{M}^{\dag})_{\ell\ell'}
+        &=(MM^{\dag})_{\ell\ell'}+A_{\ell\ell'}+(\mu\mu^{\dag})_{\ell\ell'}\frac{1}{4}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\\
+        &+(M\mu^{\dag})_{\ell\ell'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}
+        +(\mu M^{\dag})_{\ell\ell'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\,,        
+    \end{split}
 \end{align}
-We find a suitable rotation matrix $W$ to be
-\begin{multline}
-    \label{w:1}
-    W=\frac{|z|^{1/2}}{\left(\delta m^{2} + 4|z|^{2}\right)^{1/4}}\\
+where we have also included the linear term for matter weak interactions~\cite{Wolfenstein:1977ue} given by
+\begin{align}
+    \label{matter:1}
+    A_{\ell\ell'}=A
     \begin{pmatrix}
-        -ie^{i\gamma/2}\frac{1}{2|z|}\left(\delta m + \sqrt{\delta m^{2} + 4|z|^{2}}\right) & -ie^{i\gamma/2}\frac{1}{2|z|}\left(\delta m - \sqrt{\delta m^{2} + 4|z|^{2}}\right)\\
-        ie^{-i\gamma/2} & ie^{-i\gamma/2}        
-    \end{pmatrix}
-\end{multline}
-which satisfies
-\begin{align}
-    WW^{\dag}=WW^{-1}=1\,,\qquad \mathrm{det}[W]=1\,,
+        1 & 0\\
+        0 & 0
+    \end{pmatrix}\,,\qquad
+    A\propto G\rho_{e}\,.
 \end{align}
-which are the necessary conditions which for a unitary matrix.
+The coefficient $G$ is the Fermi constant and $\rho_{e}$ is the density of electron matter that the neutrinos are propagating through. \req{herm:1} can be simplified somewhat further by recalling that $M^{\dag}=M$ and $\mu^{\dag}=\mu$.
 
-Using \req{w:1}, the eigenvalues of the mass-dipole matrix are therefore
+According to \req{diag:1}, the mass matrix in \req{mix:1} can be diagonalized by the unitary matrix $V$ which in the two generation case is given by a Cabibbo-style rotation matrix
 \begin{align}
-    \label{eigenvalue:1}
-    \tilde{m}(B)_{\pm}=\frac{1}{2}\left(m_{\nu_{e}}+m_{\nu_{\mu}}\pm\sqrt{\Delta m^{2}+4{\delta m}^{2}+4\mu^{2}B^{2}}\right)\,,
+    \label{rot:1}
+    V_{\ell k}=
+    \begin{pmatrix}
+        \cos\theta & \sin\theta\\
+        -\sin\theta & \cos\theta
+    \end{pmatrix}\,.
 \end{align}
-\req{eigenvalue:1} shows that the mass splitting between the two propagating states is modified by the off-diagonal couplings in the mass matrix as well as the magnetic dipole energy $\mu B$.
+For a real Hermitian $2\times 2$ mass matrix, the rotation matrix $V$ only depends on the angle $\theta$. We note that because the transition magnetic moment matrix $\mu$ commutes with the mixing matrix $V$ we can write the following relations
+\begin{align}
+    V^{\dag}\mu^{2}V=V^{\dag}V\mu^{2}=\mu^{2}\,,\quad
+    V^{\dag}M\mu V=V^{\dag}MV\mu=m\mu\,.
+\end{align}
+Despite the fact that $V$ will not fully diagonalize \req{herm:1}, it greatly simplifies the expression to
+\begin{align}
+    \begin{split}
+    \label{herm:2}
+    (V^{\dag}\mathcal{M}\mathcal{M}^{\dag}V)_{kk'}
+    &=m_{kk'}^{2}+A_{kk'}+\mu^{2}_{kk'}\frac{1}{4}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\,,\\
+    &+(m\mu)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}
+    +(\mu m)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)\,.
+    \end{split}
+\end{align}
+We print the following matrices in \req{herm:2} explicitly
+\begin{align}
+    \label{herm:3}
+    m_{kk'}^{2}\!=\!
+    \begin{pmatrix}
+        m_{1}^{2} & 0\\
+        0 & m_{2}^{2}
+    \end{pmatrix}\,,\quad
+    \mu^{2}_{kk'}\!=\!
+    \begin{pmatrix}
+        \delta\mu^{2} & 0\\
+        0 & \delta\mu^{2}
+    \end{pmatrix}\,,\quad
+    A_{kk'}\!=\!A
+    \begin{pmatrix}
+        \cos^{2}\theta & \cos\theta\sin\theta\\
+        \cos\theta\sin\theta & \sin^{2}\theta
+    \end{pmatrix}\,,\\
+    (m\mu)_{kk'}=
+    \begin{pmatrix}
+        0 & i\delta\mu m_{1}\\
+        -i\delta\mu m_{2} & 0
+    \end{pmatrix}\,,\quad
+    (\mu m)_{kk'}=
+    \begin{pmatrix}
+        0 & i\delta\mu m_{2}\\
+        -i\delta\mu m_{1} & 0
+    \end{pmatrix}\,.    
+\end{align}
+The last two terms which are linear in fields in \req{herm:2} can be rearranged into a more useful form becoming
+\begin{align}
+    \label{herm:4}
+    \begin{split}
+    &(m\mu)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}
+    +(\mu m)_{kk'}\frac{1}{2}\left(\sigma_{\alpha\beta}F^{\alpha\beta}\right)=\\
+    &\begin{pmatrix}
+        0 & +1\\
+        +1 & 0
+    \end{pmatrix}i\delta\mu(m_{1}-m_{2})\sigma_{\alpha\beta}^\mathrm{AH}F^{\alpha\beta}/2
+    +
+    \begin{pmatrix}
+        0 & +1\\
+        -1 & 0
+    \end{pmatrix}i\delta\mu(m_{1}+m_{2})\sigma_{\alpha\beta}^\mathrm{H}F^{\alpha\beta}/2\,,
+    \end{split}
+\end{align}
+where we define the Hermitian and anti-Hermitian portions of the spin tensor
+\begin{align}
+    \label{antiherm:1}
+    \sigma_{\alpha\beta}^\mathrm{H}=\frac{1}{2}\left(\sigma_{\alpha\beta}^{\dag} + \sigma_{\alpha\beta}\right)\,,\qquad
+    \sigma_{\alpha\beta}^\mathrm{AH}=\frac{1}{2}\left(\sigma_{\alpha\beta}^{\dag} - \sigma_{\alpha\beta}\right)\,.
+\end{align}
+The reason that defining \req{antiherm:1} has utility, is that the product $\sigma_{\alpha\beta}^\mathrm{H}F^{\alpha\beta}$ projects out the the $\vec{\sigma}\cdot\vec{B}$ magnetic terms while $\sigma_{\alpha\beta}^\mathrm{AH}F^{\alpha\beta}$ projects out the $i\vec{\sigma}\cdot\vec{E}$ electric terms. It is interesting to note that if the free-particle masses are degenerate $m_{1}=m_{2}$, the linear off-diagonal electric field term vanishes. This indicates that the presence of an electrical field is responsible for splitting between the masses which is analogous to level splitting of atomic orbitals in electrical fields.
 
-If the magnetic field is set to zero $(\vec{B}=0)$, the above rotation simplifies to that of just an off-diagonal mass. The complex phase $\phi$ vanishes in a such a limit, while the rotation angle $\theta$ relaxes to the free-particle value. The inclusion of an electric field is also possible in this formation as described earlier however the mass-dipole matrix is rendered non-Hermitian and the eigenvalues more complicated in form similar to that of a complex off-diagonal mass ${\delta m}$. Mathematically both break Hermiticity in the same manner.
-
+To finally diagonalize \req{herm:2} and find its eigenvalues, we recast the expression symbollically as
+\begin{align}
+    \label{herm:4}
+    (V^{\dag}\mathcal{M}\mathcal{M}^{\dag}V)_{kk'} =
+    \begin{pmatrix}
+        A & X+iY\\
+        X-iY & B
+    \end{pmatrix}\,,\\
+    A = m_{1}^{2}+A\cos^{2}\theta+\delta\mu^{2}\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\,,\\
+    B = m_{2}^{2}+A\sin^{2}\theta+\delta\mu^{2}\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)\left(\frac{1}{4}\sigma_{\alpha\beta}F^{\alpha\beta}\right)^{\dag}\,,
+\end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
-In this work we've described the formalism of including an anomalous dipole moment into the mixing matrix for three generations of Majorana neutrinos and explicitly explored the two-generation Majorana neutrino case and determined the effect of magnetic fields on flavor rotation. This signifies a connection between spin and flavor which has not recieved attention in literature and should be explored for circumstances where strong field electromagnetic fields are present.
+In this work we have described the formalism of including an anomalous dipole moment into the mixing matrix for three generations of Majorana neutrinos and explicitly explored the two generation Majorana neutrino case and determined the effect of magnetic fields on flavor rotation. This signifies a connection between spin and flavor which has not received attention in literature and should be explored for circumstances where strong field electromagnetic fields are present.
 
 An additional consideration of our work is the presence of a dark vector field in the universe which if coupled to neutrinos would behave like off-diagonal masses for nonzero transition magnetic dipoles.
 
