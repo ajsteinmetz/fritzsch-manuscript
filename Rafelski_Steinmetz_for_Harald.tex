@@ -28,9 +28,9 @@
 
 \begin{document}
 
-\chapter[Dynamic flavor mixing through transition moments]{Dynamic flavor mixing through transition moments\label{JR_ch1}}
+\chapter[Dynamic flavor mixing through transition moments]{\label{JR_ch1}Dynamic flavor mixing through transition moments}
 
-\author[J. Rafelski, A. Steinmetz, and C. T. Yang]{Johann Rafelski, Andrew Steinmetz, and Cheng Tao Yang\footnote{JohannR@Arizona.EDU, AJSteinmetz@Arizona.EDU, ChengTaoYang@Arizona.EDU}}
+\author[J. Rafelski, A. Steinmetz, and C. T. Yang]{Johann Rafelski, Andrew Steinmetz, and Cheng Tao Yang}
 \aindx{Rafelski, J.}
 \aindx{Steinmetz, A.}
 \aindx{Yang, C. T.}
@@ -38,7 +38,8 @@
 \address{Department of Physics, The University of Arizona, Tucson, AZ 85721, USA}
 
 \begin{abstract} 
-We show that Majorana neutrino flavor mixing can be driven by transition dipole moments in strong electromagnetic fields or possibly dark vector fields. We compute neutrino eigenstates in the two-flavor model and explore the sensitivity of the rotation mixing matrix to strong electromagnetic fields. Matter interactions and three-flavor oscillations are discussed.
+We show that Majorana neutrino flavor mixing can be driven by transition dipole moments in the presence of external electromagnetic fields. We demonstrate the  sensitivity of the rotation mixing matrix to strong electromagnetic fields obtaining neutrino eigenstates in the two-flavor model. We compare these results to well known neutrino-matter interactions, discuss three-flavor oscillations and note parallels to a response to unknown dark vector field vacuum fluctuations.\footnote{Contribution to the book edited by Gerhard Buchalla, Dieter L\"ust
+and Zhi-Zhong Xing \textbf{dedicated to memory of Harald Fritzsch}}
 \end{abstract}
 
 \markboth{Johann Rafelski, Andrew Steinmetz, and Cheng Tao Yang}{Neutrinos in EM fields} % Customized running heads
@@ -52,20 +53,22 @@ We show that Majorana neutrino flavor mixing can be driven by transition dipole 
 \label{sec:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As neutrinos are naturally massless in the standard model the observed flavor oscillation presents a mystery. Moreover it is unknown if neutrinos are Dirac-type or Majorana-type fermions. In this work we look at the connection between Majorana neutrino transition magnetic dipole moments~\cite{Fujikawa:1980yx,Shrock:1980vy,Shrock:1982sc} and neutrino flavor oscillation. Neutrinos once were the dominant form of energy density in the universe~\cite{Rafelski:2023emw}, are important in the context of stellar evolution and supernova and may be related to dark matter and baryon asymmetry~\cite{Asaka:2005pn,Boyarsky:2009ix}. There is profound interest in understanding their physical properties due to their importance in experimental searches~\cite{DUNE:2020fgq} for beyond standard model (BSM) physics.
+There is profound interest in understanding neutrino  physical properties: Neutrinos are very abundant in the Universe, for a long time they were one of the dominant forms of energy density in the universe, they influence stellar and  supernova evolution. As neutrinos are naturally massless in the standard model the observed flavor oscillation suggest that they could provide a connection to the Beyond Standard Model (BSM) physics motivating  intense efforts to recognize them as Dirac-type or Majorana-type fermions. In this work we explore the connection between Majorana neutrino transition magnetic dipole moments~\cite{Fujikawa:1980yx,Shrock:1980vy,Shrock:1982sc} and neutrino flavor oscillation. Neutrino electromagnetic (EM) properties have been considered before~\cite{Schechter:1981hw,Giunti:2014ixa,Chukhnova:2019oum,Popov:2019nkr} but to best of our knowledge this is a first study of its relation to flavor oscillation.
 
-It is also unknown which (normal or inverted) hierarchy neutrinos follow therefore probing the EM properties of neutrinos could contribute evidence for one model over the other~\cite{Kouzakov:2023jtt}. Their electromagnetic (EM) properties have been considered before~\cite{Schechter:1981hw,Giunti:2014ixa,Chukhnova:2019oum,Popov:2019nkr} but to best of our knowledge this is a first consideration of the full EM contribution to flavor oscillation.
+As neutrinos are electrically neutral, they have no intrinsic magnetic moment due to their spin, therefore any nonzero dipole moment is considered anomalous~\cite{Steinmetz:2018ryf}. A small anomalous magnetic moment (AMM) can be introduced into the neutrino Lagrangian via a Pauli term. Transition magnetic moments are moments which couple different flavors electromagnetically and serve to break lepton number conservation in  processes allowing for $\nu_{\ell}+\gamma\rightarrow\nu_{\ell'}\ (\ell\neq\ell')$ where $\ell$ are the neutral lepton flavor indices $\ell\in\nu_{e},\nu_{\mu},\nu_{\tau}$. This is in addition to the fact Majorana neutrinos intrinsically break lepton number conservation serving as their own antiparticle. Therefore neutrino flavors could be remixed when exposed to strong EM fields similar to remixing within matter in the Mikheyev-Smirnov-Wolfenstein (MSW) effect~\citep{Wolfenstein:1977ue,Mikheyev:1985zog}.
 
-As neutrinos are electrically neutral, they have no intrinsic magnetic moment due to their spin, therefore any nonzero dipole moment is considered anomalous~\cite{Steinmetz:2018ryf}. A small anomalous magnetic moment (AMM) can be introduced into the neutrino Lagrangian via a Pauli term. Transition magnetic moments are moments which couple different flavors electromagnetically and serve to break lepton number conservation in electromagnetic processes allowing for $\nu_{\ell}+\gamma\rightarrow\nu_{\ell'}\ (\ell\neq\ell')$ where $\ell$ are the neutral lepton flavor indices $\ell\in\nu_{e},\nu_{\mu},\nu_{\tau}$. This is in addition to the fact Majorana neutrinos intrinsically break lepton number conservation serving as their own antiparticle. Therefore neutrino flavors could be remixed when exposed to strong EM fields similar to remixing within matter in the Mikheyev-Smirnov-Wolfenstein (MSW) effect~\citep{Wolfenstein:1977ue,Mikheyev:1985zog}.
-
-The size of the neutrino magnetic dipole moment is relatively small with a lower bound determined by the standard model with the minimal extension of neutrino mass $m_{\nu}$ included~\cite{Fujikawa:1980yx,Shrock:1980vy,Shrock:1982sc}. The upper bound is determined by (reactor, solar and astrophysical) experimental observations~\cite{Giunti:2015gga,Canas:2015yoa,Studenikin:2016ykv,AristizabalSierra:2021fuc}. The bounds are expressed in terms of the Bohr magneton $\mu_{B}$ as
+The size of the neutrino magnetic dipole moment can be constrained:  The lower bound  by the standard model with the minimal extension of neutrino mass $m_{\nu}$ included~\cite{Fujikawa:1980yx,Shrock:1980vy,Shrock:1982sc}. The upper bound is derived from reactor, solar and astrophysical  experimental observations~\cite{Giunti:2015gga,Canas:2015yoa,Studenikin:2016ykv,AristizabalSierra:2021fuc}. The bounds are expressed in terms of the electron Bohr magneton $\mu_{B}$ as
 \begin{align}
     \label{bound:1}
     \frac{e\hbar G_{F}m_{\nu}c^{2}}{8\pi^{2}\sqrt{2}} \sim 10^{-20}\mu_{B}<\mu_{\nu}^\mathrm{eff}<10^{-10}\mu_{B}\,,\qquad\mu_{B}=\frac{e\hbar}{2m_{e}}
 \end{align}
 where $G_{F}$ is the Fermi constant and $\mu_{\nu}^\mathrm{eff}$ is the effective and characteristic size of the neutrino magnetic moment. In \req{bound:1}, the lower bound was estimated using a characteristic mass of $m_{\nu}\sim0.1~\mathrm{eV}$.
 
-The transition moments are considered smaller than direct moments, but BSM physics or non-standard neutrinos~\cite{Giunti:2014ixa} are capable of producing an abnormally large electromagnetic dipole~\citep{Ohlsson:2012kf,Lindner:2017uvt,Brdar:2020quo} within the bounds of~\req{bound:1} which may manifest itself in strong field or/and dense matter environments.
+%None of the following helps our paper and distracts reader.
+
+%The transition moments are considered smaller than direct moments, but 
+
+%BSM physics supporting neu or non-standard neutrinos~\cite{Giunti:2014ixa} are capable of producing an abnormally large electromagnetic dipole~\citep{Ohlsson:2012kf,Lindner:2017uvt,Brdar:2020quo} within the bounds of~\req{bound:1} which may manifest itself in strong field or/and dense matter environments.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Neutrino flavor mixing and electromagnetic fields}
@@ -337,7 +340,7 @@ For a real Hermitian $2\times 2$ mass matrix, the rotation matrix $V_{\ell k}$ i
         -i\delta\mu & 0
     \end{pmatrix}\,.
 \end{align}
-This is an important property because it reveals that the real parameter unitary matrix in \req{commuting:1} cannot rotate a pure imaginary matrix at least in our toy model. Rather as we will see, a complex phase will be required to actually rotate the transition dipoles. 
+We see that the Majorana transition dipoles in our model are off-diagonal in both the flavor and mass basis. This is an important property because it reveals that the real parameter unitary matrix in \req{commuting:1} cannot rotate a pure imaginary matrix at least in our toy model. Rather as we will see, a complex phase will be required to actually rotate the transition dipoles.
 
 Therefore applying the free particle rotation $V_{\ell k}$ will simplify the overall mass-dipole matrix in \req{mix:2}. We apply the rotation in \req{rot:1} to \req{herm:1} yielding
 \begin{align}
@@ -362,11 +365,11 @@ where we have defined the Hermitian elements $(\mathcal{A},\mathcal{B},\mathcal{
     m_{1,2}=\frac{1}{2}\left(m_{\nu_{e}}+m_{\nu_{\mu}}\mp\sqrt{|\Delta m_{0}|^{2}+4\delta m^{2}}\right)\,,\qquad
     |\Delta m_{0}|=|m_{\nu_{\mu}}-m_{\nu_{e}}|\,.
 \end{align}
-The rotation $\theta$ for $m_{2}\geq m_{1}$ is given by
+We assign $m_{1}$ to the lower mass $(-)$ root and $m_{2}$ with the larger mass $(+)$ additive root. while The rotation $\theta$ in \req{rot:1} is then given by
 \begin{align}
     \label{massroot:2}
-    \sin2\theta=\frac{2\delta m}{\sqrt{|\Delta m_{0}|^{2}+4\delta m^{2}}}\,,\qquad
-    \cos2\theta=\frac{|\Delta m_{0}|}{\sqrt{|\Delta m_{0}|^{2}+4\delta m^{2}}}\,.
+    \sin2\theta=\sqrt{\frac{4\delta m^{2}}{|\Delta m_{0}|^{2}+4\delta m^{2}}}\,,\qquad
+    \cos2\theta=\sqrt{\frac{|\Delta m_{0}|^{2}}{|\Delta m_{0}|^{2}+4\delta m^{2}}}\,.
 \end{align}
 
 We now return to the second rotation $Z_{kj}$ introduced in \req{zrot:1} and write it explicitly as 
@@ -401,7 +404,7 @@ which we obtained by taking the determinant of \req{herm:3} over flavor but not 
     \delta\mu^{2}\frac{1}{2}\left(T^{00}+\gamma_{0}\gamma_{i}T^{0i}\right)\,,\\
     (\mathcal{B}-\mathcal{A})^{2} = |m_{2}-m_{1}|^{2} = |\Delta m|^{2}\,,\qquad (\mathcal{A}+\mathcal{B})\gamma_{0} = m_{1} + m_{2}\,.
 \end{align}
-Because of the spinor behavior of each element, the eigenvalues are obtained with $\gamma_{0}$ coefficients. \req{poly:1} therefore has the roots $\lambda_{1,2} = \widetilde m_{1,2}(E,B)$
+\req{poly:1a} was obtained using the expression in \req{cross:2}. Because of the spinor behavior of each element, the eigenvalues are obtained with $\gamma_{0}$ coefficients. \req{poly:1} therefore has the roots $\lambda_{1,2} = \widetilde m_{1,2}(E,B)$
 \begin{align}
     \label{poly:2}
     \widetilde m_{1,2}(E,B)\! &=\! \frac{1}{2}\left((\mathcal{A}+\mathcal{B})\gamma_{0}\mp\sqrt{(\mathcal{B}-\mathcal{A})^{2}+4\mathcal{C}^{2}}\right)\,,\\
@@ -411,17 +414,19 @@ Because of the spinor behavior of each element, the eigenvalues are obtained wit
 There are a number of interesting features seen in \req{poly:3}:
 \begin{enumerate}[nosep]
     \item[(a)] When the the electromagnetic fields go to zero, the masses reduce to the free-particle result printed in \req{massroot:1} as expected.
-    \item[(b)] The magnetized mass eigenstates $\widetilde m(E,B)$ depends on the energy density of the EM field $T^{00}$ and the spin projection along the momentum density or radiation energy flux $T^{0i}$.
-    \item[(c)] There are actually four distinct mass eigenstates $\widetilde m_{j}^{s}(E,B)$ present depending on the alignment or anti-alignment of the neutrino spin with the Poynting vector $\vec{E}\times\vec{B}$. For good spin eigenstates $s\in\pm1$, we can rewrite \req{poly:1a} as
+    \item[(b)] The magnetized mass eigenstates $\widetilde m(E,B)$ depends on the energy density of the EM field $T^{00}$ and the spin projection along the EM momentum density $T^{0i}$. However the coefficient is $\delta\mu^{2}$ which is presumed to be very small. Therefore the EM contribution only manifests when strong EM fields or where the free-particle case has degenerate masses.
+    \item[(c)] There are actually four distinct mass eigenstates $\widetilde m_{j}^{s}(E,B)$ present depending on the alignment or anti-alignment of the neutrino spin with the Poynting vector $\vec{E}\times\vec{B}$ of the external field. For good spin eigenstates $s\in\pm1$, we can rewrite \req{poly:1a} as
     \begin{align}
         \mathcal{C}^{2}_{s}=\delta\mu^{2}\frac{1}{2}\left(\frac{1}{2}(B^{2}+E^{2}/c^{2})+s|\vec{E}/c\times\vec{B}|\right)\,.
     \end{align}
     This requires that we consider separate rotations for each spin state as the rotation angle $\omega_{s}$ depends on the spin quantum number.
     \begin{align}
+        \label{zrot:3}
         \sin2\omega_{s}=\sqrt{\frac{4\mathcal{C}_{s}^{2}}{|\Delta m|^{2}+4\mathcal{C}_{s}^{2}}}\,,\qquad
         \cos2\omega_{s}=\sqrt{\frac{|\Delta m|^{2}}{|\Delta m|^{2}+4\mathcal{C}_{s}^{2}}}\,.
     \end{align}
-    \item[(d)] The complex phase has the value $\phi=\pi(n-1/2)$ with $n\in0,\pm1,\pm2...$ making the complex coefficient in \req{zrot:2} pure imaginary. Complex phases in mixing matrices are generally associated with CP-violation. Therefore, it is of interest to explore CP violation in the neutrino sector in the presence of external background fields which lift symmetries.
+    Spin-splitting vanishes for the pure electric or magnetic field cases or for parallel fields. The rotation in \req{zrot:3} is mathematically similar to that of the free-particle case written in \req{massroot:2} because of the simplistic nature of the $N=2$ two generation model.
+    \item[(d)] The complex phase in \req{zrot:2} has the value $\phi=\pi(n-1/2)$ with $n\in0,\pm1,\pm2...$ making the complex coefficient in \req{zrot:2} pure imaginary. Complex phases in mixing matrices are generally associated with CP-violation. Therefore, this suggests that CP violation in the neutrino sector can be induced in the presence of external background fields which lift symmetries.
     \item[(e)] While we did not evaluate the rotation with matter effects explicitly, because of the independence of free-particle rotation $V_{\ell k}$ and magnetized rotation $Z_{kj}$, the influence of the matter potential $V_\mathrm{mat.}=V_{CC}+V_{NC}$ in \req{chiral:1} can be diagonalized separately with the following replacements in the solution in \req{poly:3} of $\theta\rightarrow\theta(V_\mathrm{mat.})$ and $m_{1,2}\rightarrow m_{1,2}(V_\mathrm{mat.})$.
 \end{enumerate}
 
@@ -431,6 +436,7 @@ STILL TO DO:
     \item Discuss ultra-relativistic limit $E\sim p+m^{2}/p$.
     \item Degenerate case $|\Delta m|=0$ with pure EM splitting.
     \item Discuss dark vector field concept briefly.
+    \item Add some nice Fritzsch references when discussing neutrino mass matrices.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
