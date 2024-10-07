@@ -35,10 +35,10 @@ style="width: 1em; margin-inline-start: 0.5em"
 alt="ORCID iD icon"/> Cheng Tao Yang</a>
 
 ## cite as
-- TBD.
+- To cite this article, please refer to its earlier version published in the International Journal of Modern Physics A, Volume 38, Issue 31, 2350163 (2023), DOI: [10.1142/S0217751X23501634](https://doi.org/10.1142/S0217751X23501634).
 
 ## doi/arXiv id
-- https://doi.org/10.1142/13815
+- https://doi.org/10.1142/9789811292279_0015
 
 ## license
 
